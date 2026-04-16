@@ -27,16 +27,12 @@ int main() {
     }
 
     for (int x = 1; x < k; x++) {
-        for (int i = 0; i < n-1; i++) {
-            for (int j = i+1; j < n; j++) {
+        for (int i = n-1; i >=0; i--) {
+            for (int j = i-1; j >= 0; j--) {
                 pairs.erase({score[x][i], score[x][j]});
             }
         }
     }
 
-
-    for (auto i : pairs) {
-        cout << i.first << ' ' << i.second << '\n';
-    } 
-
+    fout << pairs.size();
 }
