@@ -1,0 +1,8 @@
+start with the number n, then start with i=2
+
+if (n % 2) is 0 then divide, 
+
+else (increment by i by 1)
+
+
+if i = n, then return i;
